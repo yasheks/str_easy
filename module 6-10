@@ -67,9 +67,10 @@ string itc_slice_str(string str, int start, int end)
 bool itc_equal_reverse(string str)
 {
     string norm = str, nenorm=itc_reverse_str(str);
+    //int i = itc_len(norm);
+
     if (norm == nenorm)
         return true;
     else
         return false;
 }
-
