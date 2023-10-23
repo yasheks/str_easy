@@ -1,3 +1,8 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 string itc_cmp_str(string str1, string str2, int num)
 {
     string result;
