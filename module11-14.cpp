@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-
+#include "str_easy.h"
 using namespace std;
 
 string itc_cmp_str(string str1, string str2, int num)
