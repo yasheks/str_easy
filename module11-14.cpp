@@ -13,8 +13,11 @@ string itc_cmp_str(string str1, string str2, int num)
         }
 
         result = result + str1[i];
+        if (itc_len(result) == itc_len(str1))
+            return result;
     }
     return result;
+
 }
 
  int itc_find_str(string str1, string str2) {
