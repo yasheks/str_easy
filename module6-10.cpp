@@ -40,7 +40,7 @@ string itc_reverse_str(string str)
 {
     int len = itc_len(str);
     string revers;
-    while(len >= 0)
+    while(len-1 >= 0)
     {
 
         revers += str[len-1];
