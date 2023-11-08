@@ -25,19 +25,18 @@ string itc_cmp_str(string str1, string str2, int num)
     int len2 = itc_len(str2);
     int index = -1;
 
-    for (int i = 0; i <= len1; i++) {
-        bool match = false;
+    for (int i = 0; i < len1; i++) {
         for (int j = 0; j < len2; j++) {
-            if (str1[i] == str2[j]) {
-                match = true;
+            if (str1[i] == str2[j] && i == j) {
+                index = i;
                 break;
             }
         }
-        if (match) {
-            index = i;
+        if (index != -1) {
             break;
         }
     }
+
     return index;
 }
 string itc_three_str(string str1, string str2, string str3)
